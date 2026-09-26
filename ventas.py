@@ -43,7 +43,21 @@ def vendedor_mayor(ventas):
 
 res1 = vendedor_mayor(ventas)
 
+def ventas_por_persona(ventas):
+    contador = {}
+    
+    for persona, cantidad in ventas:
+        if persona in contador:
+            contador[persona] += 1
+        else:
+            contador[persona] = 1
+            
+    return contador
+    
+res2 = ventas_por_persona(ventas)
+
 print(res)
 print(res1)
+print(res2)
 
 
