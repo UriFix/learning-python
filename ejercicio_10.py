@@ -18,9 +18,9 @@ def clientes_por_producto(compras):
             resultado[producto].add(cliente)
         else:
             # producto nuevo: ¿qué guardas?
-            clientes = set()    
-            clientes.add(cliente)
-            resultado[producto] = clientes
+            clientes_por_producto = set()    
+            clientes_por_producto.add(cliente)
+            resultado[producto] = clientes_por_producto
 
     return resultado
 
