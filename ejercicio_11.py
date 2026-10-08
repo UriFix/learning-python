@@ -1,11 +1,11 @@
 compras = [
     ("ana", "playera"),
     ("luis", "gorra"),
-    ("ana", "playera"),
-    ("luis", "playera"),
-    ("marta", "gorra"),
+    ("marta", "playera"),
     ("ana", "gorra"),
-    ("luis", "gorra")
+    ("luis", "pantalon"),
+    ("marta", "pantalon"),
+
 ]
 
 def clientes_distintos_por_producto(compras):
@@ -32,7 +32,24 @@ def producto_mas_clientes_distintos(compras):
     return producto_mayor
 
 print(producto_mas_clientes_distintos(compras))
-        
+
+
+def productos_mas_clientes_distintos(compras):
+    res = clientes_distintos_por_producto(compras)
+    mayor = 0
+    ganadores = []
+
+    for producto, cantidad in res.items():
+        if cantidad > mayor:
+            mayor = cantidad
+            ganadores = [producto]
+        elif cantidad == mayor:
+            ganadores.append(producto)
+    return ganadores
+
+res1 = productos_mas_clientes_distintos(compras)
+print(res1)
+
 
 
 
