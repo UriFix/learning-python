@@ -9,4 +9,16 @@ pedidos = [
 ]
 
 def total_por_cliente(pedidos, precios):
-    print
+    totales = {}
+    
+    for cliente, producto, cantidad in pedidos:
+        precio = precios[producto]
+        monto = precio * cantidad
+        if cliente in totales:
+            totales[cliente] += monto
+        else:
+            totales[cliente] = monto
+            
+    return totales
+    
+print(total_por_cliente(pedidos, precios))

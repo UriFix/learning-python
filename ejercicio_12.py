@@ -18,8 +18,7 @@ def promedio_por_alumno(calificaciones):
         else:
             datos[alumno] = [nota, 1]
     
-    suma = 0
-    conteo = 0
+
     for alumno, lista in datos.items():
         suma = lista[0]
         conteo = lista[1]
