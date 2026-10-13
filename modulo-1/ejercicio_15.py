@@ -9,7 +9,7 @@ compras = [
     ("marta", "pantalon")
 ]
 
-minimo = 10
+minimo = 2
 
 def clientes_frecuentes(compras, minimo):
     totales = {}
