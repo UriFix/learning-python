@@ -12,3 +12,5 @@ def primer_repetido(lista):
 
 print(primer_repetido([3, 7, 2, 7, 3]))
 print(primer_repetido([1, 2, 3]))
+
+
