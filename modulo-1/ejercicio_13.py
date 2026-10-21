@@ -22,3 +22,5 @@ def total_por_cliente(pedidos, precios):
     return totales
     
 print(total_por_cliente(pedidos, precios))
+
+

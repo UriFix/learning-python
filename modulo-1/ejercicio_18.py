@@ -5,7 +5,7 @@ def primer_unico(lista):
     conteo = {}
 
     for x in lista:
-        if x in dict:
+        if x in conteo:
             conteo[x] += 1
         else:
             conteo[x] = 1
@@ -17,5 +17,5 @@ def primer_unico(lista):
 
 
 
-print(primer_unico([4, 1, 4, 5, 5, 7]))
+print(primer_unico([4, 5, 4, 5, 5, 7]))
 print(primer_unico([1, 1, 2, 2]))
