@@ -3,10 +3,14 @@
 def frecuencia_lineas(nombre_archivo):
 
     try:
-        with open(nombre_archivo) as f:
+        with open(nombre_archivo, encoding="utf-8") as f:
             contador = {}
             for compra in f:
                 compra = compra.strip()
+                
+                if compra == "":
+                    continue
+                
                 if compra in contador:
                     contador[compra] += 1
                 else:

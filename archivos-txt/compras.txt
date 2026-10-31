@@ -1,6 +1,7 @@
 playera
 gorra
 playera
+
 pantalon
 gorra
 playera
