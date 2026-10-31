@@ -1,0 +1,5 @@
+playera,10
+pantalon,5
+gorra,8
+playera,3
+gorra,2
